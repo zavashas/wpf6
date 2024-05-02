@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\c#.png" />
+    <None Remove="Images\c++.png" />
+    <None Remove="Images\comp.png" />
+    <None Remove="Images\comp2.png" />
+    <None Remove="Images\java.png" />
+    <None Remove="Images\js.png" />
+    <None Remove="Images\linux.png" />
+    <None Remove="Images\Python.png" />
+    <None Remove="Images\бд.png" />
+  
+    <None Remove="ViewModel\p1a53wcn.oc3~" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\c++.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignThemes" Version="4.8.0" />
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.77" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\c#.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\comp2.png" />
+    <Resource Include="Images\java.png" />
+    <Resource Include="Images\js.png" />
+    <Resource Include="Images\linux.png" />
+    <Resource Include="Images\Python.png" />
+    <Resource Include="Images\бд.png" />
+  </ItemGroup>
+
+</Project>
