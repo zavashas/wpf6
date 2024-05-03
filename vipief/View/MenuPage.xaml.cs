@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -34,6 +34,11 @@ namespace vipief.View
         }
 
         private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new CalendarPage());
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new CalendarPage());
         }
