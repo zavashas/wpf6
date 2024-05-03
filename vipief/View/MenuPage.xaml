@@ -1,4 +1,4 @@
-﻿<Page x:Class="vipief.View.MenuPage"
+<Page x:Class="vipief.View.MenuPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -22,7 +22,7 @@
         </Grid.RowDefinitions>
         <ListBox x:Name="listBox" Grid.Row="1"/>
         <Button x:Name="Exit" Click="Exit_Click" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Выйти"/>
-        <Button Grid.Row="2" Height="50" VerticalAlignment="Bottom" Content="Сохранить и выйти" Command="{Binding SaveAndExitCommand}" Opacity="0">
+        <Button Grid.Row="2" Height="50" VerticalAlignment="Bottom" Content="Сохранить и выйти" Click="Button_Click" Command="{Binding SaveAndExitCommand}" Opacity="0">
             <Button.Triggers>
                 <EventTrigger RoutedEvent="Loaded">
                     <BeginStoryboard Storyboard="{StaticResource ButtonBlinkAnimation}"/>
