@@ -27,7 +27,10 @@ namespace vipief.ViewModel
             NextMonthCommand = new RelayCommand(NextMonth);
             SelectedDate = DateTime.Now;
         }
-
+        public void SelectDate(DateTime selectedDate)
+        {
+            SelectedDate = selectedDate;
+        }
 
         public ICommand PreviousMonthCommand { get; private set; }
         public ICommand NextMonthCommand { get; private set; }

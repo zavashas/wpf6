@@ -3,23 +3,19 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Text.Json;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
+using System.Xml.Serialization;
+using vipief.Model;
+using vipief.ViewModel.Helpers;
 
 namespace vipief.ViewModel.Helpers
 {
-    static class SerDes
+    public static class SerDes
     {
         public static void SerializeToFile<T>(T obj, string filePath)
         {
-            string directory = Path.GetDirectoryName(filePath);
-
-            if (!Directory.Exists(directory))
-            {
-                Directory.CreateDirectory(directory);
-            }
-
-            string json = JsonSerializer.Serialize(obj);
+            string json = JsonConvert.SerializeObject(obj);
             File.WriteAllText(filePath, json);
         }
 
@@ -28,7 +24,7 @@ namespace vipief.ViewModel.Helpers
             if (File.Exists(filePath))
             {
                 string json = File.ReadAllText(filePath);
-                return JsonSerializer.Deserialize<T>(json);
+                return JsonConvert.DeserializeObject<T>(json);
             }
 
             return default;

@@ -21,11 +21,6 @@ namespace vipief.View
     public partial class MenuPage : Page
     {
         public UserChoose choose;
-
-        public MenuPage()
-        {
-        }
-
         public MenuPage(UserChoose choose)
         {
             InitializeComponent();
@@ -42,5 +37,5 @@ namespace vipief.View
         {
             this.NavigationService.Navigate(new CalendarPage());
         }
-    }
+    }   
 }

@@ -12,17 +12,15 @@ namespace vipief.Model
         public string Name { get; set; }
         public string ImagePath { get; set; }
         public bool IsSelected { get; set; }
+        public DateTime dateTime { get; set; }  
 
 
-    public Discipline()
-        {
-        }
-
-        public Discipline(string name, string iconpath, bool isSelected)
+        public Discipline(string name, string iconpath, DateTime choosedate, bool isSelected)
         {
             Name = name;
             ImagePath = iconpath;
-            IsSelected = isSelected;
+            dateTime = choosedate;
+            IsSelected = isSelected;          
         }
     }
 }

@@ -193,19 +193,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\simaz\\.nuget\\packages\\": {}
+    "C:\\Users\\Ekaterina\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\simaz\\OneDrive\\Рабочий стол\\vipief\\vipief\\vipief\\vipief.csproj",
+      "projectUniqueName": "E:\\инфа\\аааа шарп\\6\\vipief\\vipief\\vipief\\vipief.csproj",
       "projectName": "vipief",
-      "projectPath": "C:\\Users\\simaz\\OneDrive\\Рабочий стол\\vipief\\vipief\\vipief\\vipief.csproj",
-      "packagesPath": "C:\\Users\\simaz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\simaz\\OneDrive\\Рабочий стол\\vipief\\vipief\\vipief\\obj\\",
+      "projectPath": "E:\\инфа\\аааа шарп\\6\\vipief\\vipief\\vipief\\vipief.csproj",
+      "packagesPath": "C:\\Users\\Ekaterina\\.nuget\\packages\\",
+      "outputPath": "E:\\инфа\\аааа шарп\\6\\vipief\\vipief\\vipief\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\simaz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ekaterina\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -225,11 +225,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -268,7 +263,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

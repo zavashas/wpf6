@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace vipief.Model
 {
-        public class UserChoose
-         {
+    public class UserChoose
+    {
         public readonly static string[] options =
-       {
-             "C++", "Java", "JS", "Linux", "Python", "бд"
+        {
+            "C++", "Java", "JS", "Linux", "Python", "бд"
         };
 
         public UserChoose(DateOnly date)
@@ -18,7 +18,23 @@ namespace vipief.Model
             this.date = date;
         }
 
-        public DateOnly date { get; init; }
-        public List<string> items = new();
+        public DateOnly date { get; private set; }
+        public List<string> items { get; } = new List<string>();
+
+        // Метод для обновления выбора пользователя
+        public void UpdateSelection(string option, bool isChecked)
+        {
+            if (isChecked)
+            {
+                if (!items.Contains(option))
+                {
+                    items.Add(option);
+                }
+            }
+            else
+            {
+                items.Remove(option);
+            }
+        }
     }
 }

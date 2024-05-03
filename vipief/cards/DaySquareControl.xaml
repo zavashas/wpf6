@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
              d:DesignHeight="70" d:DesignWidth="70">
-    <Grid Background="AliceBlue">
+    <Grid Background="#19207B7B" Opacity="0.955">
         <Grid.ContextMenu>
             <ContextMenu>
                 <MenuItem Header="Открыть день"/>
@@ -14,11 +14,11 @@
             </ContextMenu>
         </Grid.ContextMenu>
         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-            
+
             <Label Content="{Binding DayOfMonth, RelativeSource={RelativeSource AncestorType=UserControl}}" 
                    HorizontalAlignment="Center" VerticalAlignment="Center" 
                    Height="Auto" Width="Auto" FontSize="20" FontWeight="Bold" 
-                   HorizontalContentAlignment="Center"/>
+                   HorizontalContentAlignment="Center" />
 
             <Image Source="/Images/comp2.png" Height="25" Width="25"/>
         </StackPanel>

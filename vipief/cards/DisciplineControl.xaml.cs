@@ -20,20 +20,30 @@ namespace vipief.cards
 {
     public partial class DisciplineControl : UserControl
     {
+        public event EventHandler<bool> CheckBoxStateChanged;
+
         public string name { get; init; }
         public bool isOn => checkbox.IsChecked ?? false;
+
         public DisciplineControl(string name, bool isOn)
         {
             InitializeComponent();
 
             this.name = name;
             string imagePath = "/Images/" + name + ".png";
-           
-                picture.Source = new BitmapImage(new Uri(imagePath, UriKind.Relative));
-            
-            
+
+            picture.Source = new BitmapImage(new Uri(imagePath, UriKind.Relative));
             DisciplineName.Content = name;
             checkbox.IsChecked = isOn;
+
+
+            checkbox.Checked += (sender, e) => OnCheckBoxStateChanged(true);
+            checkbox.Unchecked += (sender, e) => OnCheckBoxStateChanged(false);
+        }
+
+        private void OnCheckBoxStateChanged(bool isChecked)
+        {
+            CheckBoxStateChanged?.Invoke(this, isChecked);
         }
     }
 }
